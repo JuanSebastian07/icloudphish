@@ -1,0 +1,347 @@
+:root{
+    --principal: #ffffff;
+    --border_radius : 3rem;
+
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/*Esto es un hack para manejar mejores los rem*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; /*-> 1rem = 10px*/
+    font-family: sans-serif;
+}
+
+    
+.nav-bg{
+    background-color: #323232;
+}
+
+.navegacion-principal{
+    display: flex;  
+    justify-content: space-between;
+    height: 4.7rem;
+    width: 100%;
+    top: 0;
+}
+
+.svg_logo{
+    width: 5rem;
+    height: 5rem;
+    fill: #ffffff;
+    
+}
+
+.svg_help{
+    width: 3rem;
+    height: 3rem;
+    fill: #ffffff;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.contenedor-mapa{
+    background-size: cover;
+    position: relative;
+    /*filter: blur(0.8px);*/
+}   
+
+.mapa{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.mapa form{
+    padding: 2rem;
+    background-color: white;
+    width: 33rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.findText{
+    margin-top:15px;
+    margin-bottom:18px;
+    font-family: 'applefont', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    font-weight:300;
+    color:black;
+    text-align: center;
+     -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+  }
+
+.forgot{
+    margin-top:27px;
+    margin-bottom:20px;
+      font-family: 'applefont_medium', 'Helvetica Neue', sans-serif;
+    font-size:12px;
+    font-weight:300;
+    text-align: center;
+    color:#24a337;
+  
+      -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-decoration:none;
+}
+
+.setup{
+    font-family: 'applefont_medium', 'Helvetica Neue', sans-serif;
+    font-size:12px;
+    font-weight:300;
+    text-align: center;
+    color:#24a337;
+  
+      -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-decoration: none;
+}
+
+.appleid_field{
+    -webkit-appearance: none;
+    border:1px solid #ececec;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    padding:14px;
+    padding-left:95px;
+    outline: none;
+    font-size:13px;
+    margin-bottom:0;
+    width:100%;
+    color:#222;
+    background-color:#fff;
+    caret-color:2CA53D;
+}
+
+.label_mail{
+    position:absolute;
+    padding-left:12px;
+    padding-top:17px;  
+    font-family: 'applefont_medium', 'Helvetica Neue', sans-serif;
+    font-weight:bolder;
+    font-size:12px;
+    color:#555555;
+      
+}
+
+.pwd_field{
+    -webkit-appearance: none;
+    border:1px solid #ececec;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    padding:14px;
+    
+    margin-top:-1px;
+    padding-left:98px;
+    outline: none;
+    font-size:13px;
+    width:100%;
+    color:#222;
+    
+    background-color:#fff;
+    caret-color:2CA53D;
+}
+  
+.label_pwd{
+    position:absolute;
+    padding-left:12px;
+    padding-top:14px;  
+    font-family: 'applefont_medium', 'Helvetica Neue', sans-serif;
+    font-size:12px;
+    font-weight:bold;  
+    color:#555555;
+}
+
+.submit-btn {
+    /*display:none;*/
+    cursor: pointer;
+    color:#24a337;  
+    margin-top:20px;  
+    border:none;
+    background:transparent;
+    width:100%;
+    font-size:21px;
+    font-weight:500;
+    text-align:center;
+}
+
+.spin_btn {
+    display:none;  
+    background:transparent;
+    border:none;
+    margin: 0 auto;  
+    margin-top:20px;
+    width:100%;
+    height: auto;  
+}
+
+.email-btn {
+    display:none;
+    color:#24a337;  
+    margin-top:20px;  
+    border:none;
+    background:transparent;
+    width:100%;
+    font-size:21px;
+    font-weight:500;
+}
+
+.raya{
+    height: 0.1rem;
+    background-color: #f0ecec;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+/*----*/
+.alert{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 4.6rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    visibility: hidden;
+}
+
+.alert.active{
+    visibility: visible;
+}
+
+.alert form{
+    width: 30rem;
+}
+
+.btn-ok{
+    cursor: pointer;
+    color:#24a337; 
+    border:none;
+    margin-top: 1rem;
+    margin-right: 24rem;
+    background:transparent;
+    font-size:21px;
+    font-weight:500;
+}
+
+/*--*/
+.alert2{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 4.6rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    visibility: hidden;
+}
+
+.alert2.active{
+    visibility: visible;
+}
+
+.alert2 form{
+    width: 30rem;
+}
+
+.alert2 .btn-pascode{
+    cursor: pointer;
+    color:#24a337;
+    margin-top: 1rem;
+    margin-right: 24rem;
+    background:transparent;
+    font-size: 1.8rem;
+    font-weight:500;
+}
+
+.alert2 .raya{
+    margin-top: 1rem;
+    height: 0.1rem;
+}
+
+/**/
+.pinn {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 2rem;
+    display: inline-block;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 3px;
+    border: 1px solid rgb(175, 173, 173);
+    text-align:center;
+    font-weight:700;
+}
+
+.dots {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.alert3{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 4.6rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    visibility: hidden;
+}
+
+.alert3.active{
+    visibility: visible;
+}
+
+.alert3 form{
+    height: 25rem;
+}
+
+.bnt-confirmar{
+    margin-top: 3rem;
+}
+
+/* Este media query lo que quiere decir es: de 0px a 920px agrega esto*/
+@media (max-width: 920px) {
+    iframe{
+        width: 100%;
+        height: 66.5rem;
+    }
+
+}
+
+/*De 920px para arriba*/
+@media(min-width:920px){
+    iframe{
+        width: 100%;
+        height: 60.5rem;
+    }
+}

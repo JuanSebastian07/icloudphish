@@ -1,6 +1,6 @@
 # icloudphish
 
-<h1>Disclaimer</h1>
+<b>Disclaimer</b>
 Cualquier acción o actividad relacionada con el material contenido es de su exclusiva responsabilidad. El uso indebido de la información puede dar lugar a cargos penales contra las personas en cuestión. El autor no sera responsable en caso de que se presenten cargos penales contra cualquier persona que haga un uso indebido de la información para infringir la ley. 
 
 Bueno aqui hacemos uso de media queries para poder adaptar la representacion a dispositivos como es mobile y desktop
